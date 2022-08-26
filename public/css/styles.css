@@ -25,31 +25,30 @@ header{
 .top-header{
     display: flex;
     flex-wrap:wrap;
-    width: 100%;
     justify-content: space-around;
+    width: 100%;
+    align-items: center;
 }
 
 header div.logo{
     padding: 10px;
     width: 30%;
-    border: dotted black;
-
-}
-header form{
-    padding: 2px;
-    font-size: 11px;
 }
 
-header .input{
-    border-radius: 5px;
+form{
+    position:relative;
+}
+
+
+form i{
+    position: relative;
+    right: 20px;
+    font-size: smaller;
 }
 
 header .top-header p{
-    display: flex;
-    width: 30vw;
     font-size: 12px;
-    align-items: center;
-    text-align: left;
+    text-align: justify;
 }
 header nav{
     font-size: 12px;
@@ -80,15 +79,6 @@ div.burger-menu i{
     width: 40px;
 }
 
-form {
-    border: dotted pink;
-}
-form i{
-    position: relative;
-    border: dotted black;
-    right: 15px;
-    
-}
 div.last-visit,
 div.offers{
     display: flex;
@@ -200,15 +190,61 @@ footer div article i {
     color: #0044AA;
 }
 
+.description{
+    display: none;}
+.top-header{
+    display: flex;
+    padding: 20px;}
+
+    header nav .right-navbar, .left-navbar{
+        display:none;}
+
+
 /*---Register----*/
+
 .register{
     width: 50%;
     text-align: justify;
+    padding-top: 25px;
 }
 .main-data{
     display: flex;
     flex-direction: column;
+    border-radius: 5%;
 }
+
+.birth-adress{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-reset{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-reset .submit{
+    background-color: #0044AA;
+    color:#FFF
+}
+
+.submit-reset .reset{
+    background-color: #ba0764;
+    color:#FFF
+
+}
+
+/* ---TABLET----*/
 @media (min-width: 361px){
     main section article .description{
         display: block;
@@ -234,10 +270,11 @@ footer div article i {
         width: 50%;
     }
 
-   
-    
-}
+    header nav .right-navbar, .left-navbar{
+        display:flex;}
 
+}
+/* ---DESKTOP----*/
 @media (min-width: 769px){
     main section div.products article{
         width: 22%;
@@ -249,46 +286,33 @@ footer div article i {
     footer div {
         display: flex;
         justify-content: space-between;
+        padding: 10px;
     }
 
-    /*header div.logo{
-        width: 30%;
+    .top-header .logo{
+        max-width: 200px;
+    }
+    .top-header{
+        display: flex;
+        padding: 0;
     }
 
-    header div form{
-        width: 30%;
+    form{
+        display: flex;
+        position: relative;
     }
-    */
-
-   
+   form .input  {
+        width: 500px;
     }
 
-    @media (max-width: 460px){
-        /* Mobile */
-        .description{
-            display: none;
-        }
-        .top-header{
-            display: flex;
-            padding: 20px;
-        }
-        header nav{
-            display: none;
-        }
-        .products{
-            flex-direction: column
-        }
+    form i{
+        position: relative;
+        top:4px}
 
-        header .input{
-            width: 50%;
+    .top-header p{
+            font-size: 12px;
+            text-align: left;
     }
-        header div.logo{
-            width: 50%;
-        }
 
-        header .top-header p{
-            width: 100%;
-            justify-content: center;
-        }
-
+    
 }
