@@ -1,0 +1,294 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+
+header{
+    background-color: #EAC926;
+}
+
+.top-header{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header div.logo{
+    padding: 10px;
+    width: 30%;
+    border: dotted black;
+
+}
+header form{
+    padding: 2px;
+    font-size: 11px;
+}
+
+header .input{
+    border-radius: 5px;
+}
+
+header .top-header p{
+    display: flex;
+    width: 30vw;
+    font-size: 12px;
+    align-items: center;
+    text-align: left;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+form {
+    border: dotted pink;
+}
+form i{
+    position: relative;
+    border: dotted black;
+    right: 15px;
+    
+}
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 10px;
+}
+
+nav .right-navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .right-navbar li{
+   padding-right: 20px;
+}
+
+nav .left-navbar li{
+    padding-right: 20px
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+footer article{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+footer div article i {
+    color: #0044AA;
+}
+
+/*---Register----*/
+.register{
+    width: 50%;
+    text-align: justify;
+}
+.main-data{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+   
+    
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+    div.burger-menu{
+        display: none;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*header div.logo{
+        width: 30%;
+    }
+
+    header div form{
+        width: 30%;
+    }
+    */
+
+   
+    }
+
+    @media (max-width: 460px){
+        /* Mobile */
+        .description{
+            display: none;
+        }
+        .top-header{
+            display: flex;
+            padding: 20px;
+        }
+        header nav{
+            display: none;
+        }
+        .products{
+            flex-direction: column
+        }
+
+        header .input{
+            width: 50%;
+    }
+        header div.logo{
+            width: 50%;
+        }
+
+        header .top-header p{
+            width: 100%;
+            justify-content: center;
+        }
+
+}
