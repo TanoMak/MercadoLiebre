@@ -106,8 +106,14 @@ h3,
 }
 
 .description{
-    display: none;
+    opacity: 0;
     margin-top: 20px;
+    transition-property: opacity 100ms;
+}
+
+.description:hover{
+    opacity: 100;
+
 }
 
 section.banner img{
@@ -122,7 +128,17 @@ main{
 main section article{
     background-color: #fff;    
     margin: 10px 0px;
+   
 }
+
+main section .products article{
+    transition: box-shadow 100ms;  
+}
+
+main section .products article:hover{
+    box-shadow: 10px 5px 5px yellow
+}
+
 
 main section article img{
     width: 100%;
@@ -145,7 +161,14 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: transform 150ms ;
 }
+
+main section article i:hover{
+    transform: rotate(-90deg);
+}
+
+
 
 main section h3{
     margin: 20px 0px;
@@ -180,6 +203,9 @@ article div.main-article{
     padding: 15px;
 }
 
+footer{
+    background-color: #FFF;
+}
 footer article{
     text-align: center;
     padding: 10px;
@@ -188,7 +214,14 @@ footer article{
 
 footer div article i {
     color: #0044AA;
+    transition-property: color 100ms;
 }
+
+footer div article i:hover{
+    color: grey
+}
+
+
 
 .description{
     display: none;}
@@ -203,9 +236,12 @@ footer div article i {
 /*---Register----*/
 
 .register{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
     width: 50%;
-    text-align: justify;
-    padding-top: 25px;
+    
 }
 .main-data{
     display: flex;
@@ -243,6 +279,32 @@ footer div article i {
     color:#FFF
 
 }
+
+/*---Login----*/
+
+.login{
+    text-align: center;
+    padding-top: 10px;
+}
+ .login .login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    border-radius: 5px;
+}
+.login .login-form .submit{
+    background-color: #0044AA;
+    color:#FFF;
+    transition-property: background-color 150ms  ;
+}
+
+.login .login-form .submit:hover{
+    background-color:#0022aa
+}
+
+
+
 
 /* ---TABLET----*/
 @media (min-width: 361px){
@@ -285,34 +347,54 @@ footer div article i {
 
     footer div {
         display: flex;
-        justify-content: space-between;
         padding: 10px;
     }
 
     .top-header .logo{
-        max-width: 200px;
+        width: 20%;
     }
     .top-header{
         display: flex;
         padding: 0;
+        align-items: center;
     }
 
-    form{
+    .top-header .form{
         display: flex;
         position: relative;
+
     }
    form .input  {
-        width: 500px;
+    width: 450px;
+
     }
 
     form i{
         position: relative;
-        top:4px}
-
-    .top-header p{
-            font-size: 12px;
-            text-align: left;
     }
 
+    .top-header p{
+            font-size: larger;
+            text-align: center;
+    }
+
+    .register{
+      display: flex;
+      flex-direction: column;
+    }
+
+  main .login{
+    display: flex;
+    justify-content: space-around;
+  }
+
+ .login .login-form{
+    display: flex;
+    width: 50vh;
+    margin: 0 auto
+  }
     
+  .right-navbar, .left-navbar{
+    font-size: large;
+  }
 }
