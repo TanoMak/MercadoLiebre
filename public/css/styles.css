@@ -39,6 +39,10 @@ form{
     position:relative;
 }
 
+form .input{
+    border-radius:1mm
+}
+
 
 form i{
     position: relative;
@@ -208,13 +212,16 @@ footer{
 }
 footer article{
     text-align: center;
-    padding: 10px;
+    padding: 50px;
     margin: auto;
 }
 
 footer div article i {
     color: #0044AA;
     transition-property: color 100ms;
+    padding: 10px;
+    font-size: x-large;
+
 }
 
 footer div article i:hover{
@@ -366,6 +373,7 @@ footer div article i:hover{
     }
    form .input  {
     width: 450px;
+    height: 35px;
 
     }
 
